@@ -1,0 +1,24 @@
+#include <iostream>
+//Calculating the factorial of numbers using recursion
+
+int factorialCalc(int n)
+{
+    if(n == 1 || n == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return n * factorialCalc(n-1);
+    }
+  
+};
+
+int main()
+{
+    int n;
+    std::cout << "Enter a number: ";
+    std::cin >> n;
+
+    return 0;
+}

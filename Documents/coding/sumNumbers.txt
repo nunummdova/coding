@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+//Sum numbers between m-n recursively
+int recursiveSum (int m, int n)
+{
+    //Base case to break this recursion 
+    if(m == n)
+    {
+        return m;
+    }
+    //
+    return m + recursiveSum(m + 1, n);
+}
+
+int main()
+{
+    int m,n;
+    std::cout << "Enter a number:";
+    std::cin >> m;
+    std::cout << "Enter a number: ";
+    std::cin >> n;
+    std::cout << "Sum = " << recursiveSum(m,n);
+
+
+    return 0;
+
+}
+
